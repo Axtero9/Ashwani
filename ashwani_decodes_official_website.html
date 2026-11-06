@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashwani Decodes | Psychology of Everyday Life</title>
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: {
+              50: '#FAF8F5',
+              100: '#F7F4EE',
+              200: '#EFECE6',
+              300: '#E2DDD4',
+              400: '#CEC7BA',
+              500: '#B5AC9C',
+            },
+            sage: {
+              100: '#E8EFE8',
+              200: '#D2DFD2',
+              500: '#588157',
+              600: '#3A5A40',
+              700: '#344E41',
+              800: '#26382F',
+              900: '#1B2822',
+            },
+            clay: {
+              300: '#E8BAA2',
+              400: '#DDA15E',
+              500: '#C57B57',
+              600: '#A45B38'
+            },
+            espresso: {
+              700: '#3D3935',
+              800: '#2B2825',
+              900: '#1F1D1A',
+              950: '#141311'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          boxShadow: {
+            'warm-sm': '0 2px 8px -2px rgba(58, 90, 64, 0.08), 0 1px 4px -1px rgba(35, 35, 32, 0.04)',
+            'warm-md': '0 8px 24px -4px rgba(45, 64, 48, 0.1), 0 2px 6px -1px rgba(35, 35, 32, 0.05)',
+            'warm-lg': '0 20px 40px -10px rgba(45, 64, 48, 0.14), 0 4px 12px -2px rgba(35, 35, 32, 0.06)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom subtle paper grain texture simulation */
+    .bg-paper {
+      background-color: #FAF8F5;
+      background-image: radial-gradient(rgba(58, 90, 64, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    
+    /* Smooth custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F7F4EE;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CEC7BA;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #588157;
+    }
+
+    /* Modal Backdrop Blur */
+    .modal-backdrop {
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+
+<body class="bg-paper text-espresso-800 font-sans antialiased selection:bg-sage-200 selection:text-sage-900 min-h-screen flex flex-col justify-between">
+
+  <!-- ==================== TOP NOTIFICATION BAR ==================== -->
+  <div class="bg-sage-700 text-sand-100 text-xs md:text-sm py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-clay-400 animate-pulse"></span>
+    <span>Join 75,000+ mindful thinkers decoding daily behavioral patterns.</span>
+    <a href="http://youtube.com/@ashwani-decodes" target="_blank" rel="noopener noreferrer" class="underline hover:text-clay-300 ml-1 transition-colors">
+      Subscribe on YouTube &rarr;
+    </a>
+  </div>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="sticky top-0 z-40 bg-sand-50/90 backdrop-blur-md border-b border-sand-300/70 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand / Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-sage-600 text-sand-50 flex items-center justify-center shadow-warm-sm group-hover:bg-sage-700 transition-colors">
+            <svg class="w-5 h-5 text-sand-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <div>
+            <span class="font-serif text-2xl font-bold tracking-tight text-sage-800 block leading-tight">Ashwani Decodes</span>
+            <span class="text-[11px] uppercase tracking-widest text-espresso-700 font-semibold block">Psychology & Human Behavior</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-espresso-700">
+          <a href="#topics" class="hover:text-sage-600 transition-colors">Decoded Topics</a>
+          <a href="#framework" class="hover:text-sage-600 transition-colors">The 3-Step Formula</a>
+          <a href="#reframer" class="hover:text-sage-600 transition-colors">Daily Reframer</a>
+          <a href="#creator" class="hover:text-sage-600 transition-colors">About Ashwani</a>
+          <a href="#dispatch" class="hover:text-sage-600 transition-colors">Sunday Letter</a>
+        </nav>
+
+        <!-- Social Action CTA -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://www.instagram.com/ashwani_decodes/" target="_blank" rel="noopener noreferrer" 
+             aria-label="Instagram Profile" 
+             class="w-10 h-10 rounded-full border border-sand-400/80 flex items-center justify-center text-espresso-700 hover:text-clay-500 hover:border-clay-400 transition-all">
+            <i class="fa-brands fa-instagram text-lg"></i>
+          </a>
+          <a href="http://youtube.com/@ashwani-decodes" target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2 bg-sage-700 hover:bg-sage-800 text-sand-50 text-sm font-semibold px-4 py-2.5 rounded-full shadow-warm-sm hover:shadow-warm-md transition-all">
+            <i class="fa-brands fa-youtube text-red-400"></i>
+            <span>Watch Decodes</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobileMenuBtn" aria-label="Toggle menu" class="md:hidden p-2 rounded-lg text-espresso-800 hover:bg-sand-200">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer" class="hidden md:hidden bg-sand-100 border-b border-sand-300 px-6 py-5 space-y-4 shadow-warm-md">
+      <a href="#topics" class="block text-espresso-800 font-medium hover:text-sage-600 transition-colors">Decoded Topics</a>
+      <a href="#framework" class="block text-espresso-800 font-medium hover:text-sage-600 transition-colors">The 3-Step Formula</a>
+      <a href="#reframer" class="block text-espresso-800 font-medium hover:text-sage-600 transition-colors">Daily Reframer Tool</a>
+      <a href="#creator" class="block text-espresso-800 font-medium hover:text-sage-600 transition-colors">About Ashwani</a>
+      <a href="#dispatch" class="block text-espresso-800 font-medium hover:text-sage-600 transition-colors">Sunday Letter</a>
+      
+      <div class="pt-4 border-t border-sand-300 flex items-center gap-3">
+        <a href="https://www.instagram.com/ashwani_decodes/" target="_blank" class="flex-1 py-2 rounded-lg border border-sand-400 text-center text-xs font-semibold text-espresso-800 flex items-center justify-center gap-2">
+          <i class="fa-brands fa-instagram text-clay-500"></i> Instagram
+        </a>
+        <a href="http://youtube.com/@ashwani-decodes" target="_blank" class="flex-1 py-2 rounded-lg bg-sage-700 text-sand-50 text-center text-xs font-semibold flex items-center justify-center gap-2">
+          <i class="fa-brands fa-youtube text-red-400"></i> YouTube
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+      <!-- Background subtle decorative aura -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-sage-200/40 via-sand-200/50 to-clay-300/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Copy -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-sage-100 border border-sage-200 text-sage-700 text-xs uppercase tracking-wider font-semibold">
+              <span class="w-2 h-2 rounded-full bg-sage-500"></span>
+              Everyday Behavioral Science & Mindset
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-espresso-950 font-bold leading-[1.15] tracking-tight">
+              Understanding why our brains <span class="italic font-normal text-sage-600 underline decoration-sand-400 decoration-wavy decoration-1 underline-offset-8">overthink</span>, compare, & seek validation.
+            </h1>
+
+            <p class="text-espresso-700 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              You are not broken; you are simply running ancient psychological software in a modern digital society. Short, deeply honest breakdowns on human attachment, habit loops, and quiet mental clarity.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#topics" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-sage-700 hover:bg-sage-800 text-sand-50 font-medium text-sm transition-all shadow-warm-md hover:-translate-y-0.5 text-center">
+                Explore Decoded Breakdowns
+              </a>
+              <a href="http://youtube.com/@ashwani-decodes" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-sand-200 hover:bg-sand-300 text-espresso-800 font-medium text-sm transition-all border border-sand-300/80 text-center flex items-center justify-center gap-2">
+                <i class="fa-brands fa-youtube text-red-600"></i>
+                Watch Latest Shorts
+              </a>
+            </div>
+
+            <!-- Creator Credibility / Trust badges -->
+            <div class="pt-6 border-t border-sand-300/60 grid grid-cols-3 gap-4 text-center lg:text-left">
+              <div>
+                <p class="font-serif text-2xl sm:text-3xl font-bold text-sage-700">100+</p>
+                <p class="text-xs text-espresso-700 uppercase tracking-wider mt-0.5">Decoded Insights</p>
+              </div>
+              <div>
+                <p class="font-serif text-2xl sm:text-3xl font-bold text-sage-700">10M+</p>
+                <p class="text-xs text-espresso-700 uppercase tracking-wider mt-0.5">Video Impressions</p>
+              </div>
+              <div>
+                <p class="font-serif text-2xl sm:text-3xl font-bold text-sage-700">60s</p>
+                <p class="text-xs text-espresso-700 uppercase tracking-wider mt-0.5">Actionable Clarity</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Aesthetic Visual Card -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <!-- Background card rotation layer -->
+              <div class="absolute inset-0 bg-sage-200/80 rounded-3xl transform rotate-2 shadow-warm-md"></div>
+              
+              <!-- Foreground main card -->
+              <div class="relative bg-sand-100 rounded-3xl p-6 sm:p-8 border border-sand-300 shadow-warm-lg space-y-6">
+                <!-- Header of card -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img 
+                      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+                      alt="Ashwani Decodes Avatar" 
+                      onerror="this.src='https://placehold.co/150x150/588157/FAF8F5?text=AD'"
+                      class="w-12 h-12 rounded-full object-cover border-2 border-sage-500 shadow-sm"
+                    >
+                    <div>
+                      <h4 class="font-bold text-espresso-900 text-sm">Ashwani Decodes</h4>
+                      <p class="text-xs text-espresso-700">@ashwani_decodes</p>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand-200 text-sage-700 text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Verified Creator
+                  </span>
+                </div>
+
+                <!-- Featured Thought Pill -->
+                <div class="p-5 rounded-2xl bg-sand-50 border border-sand-300/70 space-y-3">
+                  <p class="text-xs uppercase tracking-widest font-semibold text-clay-500">Today's Core Principle</p>
+                  <p class="font-serif text-xl sm:text-2xl text-espresso-900 italic leading-snug">
+                    "If you are happy with who you are becoming, there is no bigger achievement. Stop comparing your chapter 2 with someone else's chapter 20."
+                  </p>
+                  <p class="text-xs text-espresso-700">Applied Social Comparison Theory (Leon Festinger, 1954)</p>
+                </div>
+
+                <!-- Interactive Mini-Audio Simulation Bar -->
+                <div class="space-y-2">
+                  <div class="flex justify-between items-center text-xs text-espresso-700 font-medium">
+                    <span class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-headphones text-sage-600"></i> Episode Snippet: Overthinking at Night
+                    </span>
+                    <span class="text-sage-700">01:14</span>
+                  </div>
+                  <div class="w-full bg-sand-300 h-2 rounded-full overflow-hidden">
+                    <div class="bg-sage-600 h-full w-2/3 rounded-full"></div>
+                  </div>
+                </div>
+
+                <!-- Fast link badge -->
+                <div class="pt-2 flex items-center justify-between text-xs text-espresso-700 border-t border-sand-300/60">
+                  <span class="italic">"Decode your habits. Free your mind."</span>
+                  <a href="#topics" class="font-semibold text-sage-700 hover:text-sage-800 flex items-center gap-1">
+                    Listen to audio note &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== THE 3-STEP FRAMEWORK ==================== -->
+    <section id="framework" class="py-16 md:py-24 bg-sand-100 border-y border-sand-300/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <span class="text-xs uppercase font-bold tracking-widest text-clay-500">The Blueprint</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso-950">How We Decode Any Emotion in 3 Steps</h2>
+          <p class="text-espresso-700 text-sm sm:text-base leading-relaxed">
+            We don't do motivational fluff or toxic positivity. We look under the hood at neurological patterns and psychological conditioning.
+          </p>
+        </div>
+
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Step 1 -->
+          <div class="p-8 rounded-3xl bg-sand-50 border border-sand-300 shadow-warm-sm hover:shadow-warm-md transition-all relative overflow-hidden group">
+            <span class="font-serif text-7xl font-bold text-sand-300 absolute -top-4 -right-2 select-none group-hover:text-sage-200 transition-colors">01</span>
+            <div class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-xl mb-6 shadow-sm">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-espresso-900 mb-3">Notice the Trigger</h3>
+            <p class="text-sm text-espresso-700 leading-relaxed">
+              Identify the exact stimulus: Is it someone not replying instantly? Seeing a friend's new promotion? Catching yourself opening Instagram without conscious intent?
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-8 rounded-3xl bg-sand-50 border border-sand-300 shadow-warm-sm hover:shadow-warm-md transition-all relative overflow-hidden group">
+            <span class="font-serif text-7xl font-bold text-sand-300 absolute -top-4 -right-2 select-none group-hover:text-sage-200 transition-colors">02</span>
+            <div class="w-12 h-12 rounded-2xl bg-clay-300/40 text-clay-600 flex items-center justify-center text-xl mb-6 shadow-sm">
+              <i class="fa-solid fa-dna"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-espresso-900 mb-3">Decode the Bias</h3>
+            <p class="text-sm text-espresso-700 leading-relaxed">
+              Trace it back to evolutionary biology: The brain hates ambiguity because uncertainty once signaled physical danger. Your brain isn't attacking you; it is trying to safeguard you.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-8 rounded-3xl bg-sand-50 border border-sand-300 shadow-warm-sm hover:shadow-warm-md transition-all relative overflow-hidden group">
+            <span class="font-serif text-7xl font-bold text-sand-300 absolute -top-4 -right-2 select-none group-hover:text-sage-200 transition-colors">03</span>
+            <div class="w-12 h-12 rounded-2xl bg-sage-200 text-sage-800 flex items-center justify-center text-xl mb-6 shadow-sm">
+              <i class="fa-solid fa-feather-pointed"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-espresso-900 mb-3">Reframe & Ground</h3>
+            <p class="text-sm text-espresso-700 leading-relaxed">
+              Replace self-criticism with neutral curiosity. Execute a 60-second behavioral pivot that breaks the subconscious loop before it spirals into rumination.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DECODED TOPICS (INTERACTIVE EXPLORER) ==================== -->
+    <section id="topics" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-widest text-clay-500">Curated Episodes & Shorts</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso-950 mt-1">Explore Decoded Episodes</h2>
+          <p class="text-espresso-700 text-sm sm:text-base mt-2 max-w-xl">
+            Select a theme to see the breakdown of everyday mental habits, attachment mysteries, and digital habits.
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="http://youtube.com/@ashwani-decodes" target="_blank" class="text-sm font-semibold text-sage-700 hover:text-sage-800 flex items-center gap-1.5 underline decoration-sand-400 underline-offset-4">
+            View All On YouTube <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-none text-xs sm:text-sm font-medium">
+        <button onclick="filterEpisodes('all')" class="filter-tab px-4 py-2 rounded-full border border-sage-700 bg-sage-700 text-sand-50 transition-all whitespace-nowrap active-tab" data-filter="all">
+          All Breakdowns
+        </button>
+        <button onclick="filterEpisodes('comparison')" class="filter-tab px-4 py-2 rounded-full border border-sand-400 bg-sand-100 text-espresso-700 hover:border-sage-600 transition-all whitespace-nowrap" data-filter="comparison">
+          Social Comparison
+        </button>
+        <button onclick="filterEpisodes('overthinking')" class="filter-tab px-4 py-2 rounded-full border border-sand-400 bg-sand-100 text-espresso-700 hover:border-sage-600 transition-all whitespace-nowrap" data-filter="overthinking">
+          Overthinking & Sleep
+        </button>
+        <button onclick="filterEpisodes('dopamine')" class="filter-tab px-4 py-2 rounded-full border border-sand-400 bg-sand-100 text-espresso-700 hover:border-sage-600 transition-all whitespace-nowrap" data-filter="dopamine">
+          Dopamine & Screens
+        </button>
+        <button onclick="filterEpisodes('relationships')" class="filter-tab px-4 py-2 rounded-full border border-sand-400 bg-sand-100 text-espresso-700 hover:border-sage-600 transition-all whitespace-nowrap" data-filter="relationships">
+          Attachment & Relationships
+        </button>
+      </div>
+
+      <!-- Episode Grid -->
+      <div id="episodesContainer" class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Card 1: Comparison -->
+        <article class="episode-card group bg-sand-50 rounded-3xl border border-sand-300 overflow-hidden shadow-warm-sm hover:shadow-warm-lg transition-all flex flex-col justify-between" data-category="comparison">
+          <div class="relative h-48 overflow-hidden bg-sand-200">
+            <img 
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" 
+              alt="Social Comparison Illustration"
+              onerror="this.src='https://placehold.co/600x400/E2DDD4/3A5A40?text=Comparison+Decoded'" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <span class="absolute top-3 left-3 bg-sand-50/90 backdrop-blur-sm text-sage-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Social Dynamics
+            </span>
+            <span class="absolute bottom-3 right-3 bg-espresso-950/80 text-sand-50 text-[11px] font-medium px-2.5 py-0.5 rounded-md flex items-center gap-1">
+              <i class="fa-regular fa-clock"></i> 58s Short
+            </span>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso-950 leading-snug group-hover:text-sage-700 transition-colors">
+                Why Do We Compare Our Life With Others?
+              </h3>
+              <p class="text-sm text-espresso-700 mt-2 line-clamp-3 leading-relaxed">
+                We compare our behind-the-scenes struggles to everyone else's curated highlight reels. Discover how upward social comparison tricks our dopamine circuits.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-sand-300/80 flex items-center justify-between">
+              <span class="text-xs text-clay-600 font-semibold italic">Festinger's Paradox</span>
+              <button onclick="openModal(1)" class="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-sand-200 hover:bg-sage-600 hover:text-sand-50 text-espresso-800 transition-colors flex items-center gap-1.5">
+                <span>Read Decode</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Dopamine Loop -->
+        <article class="episode-card group bg-sand-50 rounded-3xl border border-sand-300 overflow-hidden shadow-warm-sm hover:shadow-warm-lg transition-all flex flex-col justify-between" data-category="dopamine">
+          <div class="relative h-48 overflow-hidden bg-sand-200">
+            <img 
+              src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=700&q=80" 
+              alt="Checking Phone Screen" 
+              onerror="this.src='https://placehold.co/600x400/E2DDD4/3A5A40?text=Dopamine+Habit'"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <span class="absolute top-3 left-3 bg-sand-50/90 backdrop-blur-sm text-sage-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Habit Loops
+            </span>
+            <span class="absolute bottom-3 right-3 bg-espresso-950/80 text-sand-50 text-[11px] font-medium px-2.5 py-0.5 rounded-md flex items-center gap-1">
+              <i class="fa-regular fa-clock"></i> 64s Short
+            </span>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso-950 leading-snug group-hover:text-sage-700 transition-colors">
+                Why Do We Check Our Phone Without Notifications?
+              </h3>
+              <p class="text-sm text-espresso-700 mt-2 line-clamp-3 leading-relaxed">
+                Phantom vibration syndrome and variable reward schedules. Why your thumb reaches for the screen whenever there is even 3 seconds of emotional stillness.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-sand-300/80 flex items-center justify-between">
+              <span class="text-xs text-clay-600 font-semibold italic">Intermittent Reinforcement</span>
+              <button onclick="openModal(2)" class="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-sand-200 hover:bg-sage-600 hover:text-sand-50 text-espresso-800 transition-colors flex items-center gap-1.5">
+                <span>Read Decode</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Overthinking & Sleep -->
+        <article class="episode-card group bg-sand-50 rounded-3xl border border-sand-300 overflow-hidden shadow-warm-sm hover:shadow-warm-lg transition-all flex flex-col justify-between" data-category="overthinking">
+          <div class="relative h-48 overflow-hidden bg-sand-200">
+            <img 
+              src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=700&q=80" 
+              alt="Night overthinking" 
+              onerror="this.src='https://placehold.co/600x400/E2DDD4/3A5A40?text=Night+Overthinking'"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <span class="absolute top-3 left-3 bg-sand-50/90 backdrop-blur-sm text-sage-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Mindset & Sleep
+            </span>
+            <span class="absolute bottom-3 right-3 bg-espresso-950/80 text-sand-50 text-[11px] font-medium px-2.5 py-0.5 rounded-md flex items-center gap-1">
+              <i class="fa-regular fa-clock"></i> 72s Short
+            </span>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso-950 leading-snug group-hover:text-sage-700 transition-colors">
+                Why Do We Overthink at Night?
+              </h3>
+              <p class="text-sm text-espresso-700 mt-2 line-clamp-3 leading-relaxed">
+                When external sensory inputs cease, the Default Mode Network (DMN) ramps up. Unprocessed feelings from daytime rush to the surface in the quiet.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-sand-300/80 flex items-center justify-between">
+              <span class="text-xs text-clay-600 font-semibold italic">Cognitive Quieting</span>
+              <button onclick="openModal(3)" class="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-sand-200 hover:bg-sage-600 hover:text-sand-50 text-espresso-800 transition-colors flex items-center gap-1.5">
+                <span>Read Decode</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Relationships & Attachment -->
+        <article class="episode-card group bg-sand-50 rounded-3xl border border-sand-300 overflow-hidden shadow-warm-sm hover:shadow-warm-lg transition-all flex flex-col justify-between" data-category="relationships">
+          <div class="relative h-48 overflow-hidden bg-sand-200">
+            <img 
+              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=700&q=80" 
+              alt="Relationships and distance" 
+              onerror="this.src='https://placehold.co/600x400/E2DDD4/3A5A40?text=Attachment+Decoded'"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <span class="absolute top-3 left-3 bg-sand-50/90 backdrop-blur-sm text-sage-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Attachment
+            </span>
+            <span class="absolute bottom-3 right-3 bg-espresso-950/80 text-sand-50 text-[11px] font-medium px-2.5 py-0.5 rounded-md flex items-center gap-1">
+              <i class="fa-regular fa-clock"></i> 60s Short
+            </span>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso-950 leading-snug group-hover:text-sage-700 transition-colors">
+                Why Does Ignoring Someone Make Them Want You More?
+              </h3>
+              <p class="text-sm text-espresso-700 mt-2 line-clamp-3 leading-relaxed">
+                The psychology of psychological reactance and perceived scarcity. When someone pulls away, the brain interprets withdrawal as high value.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-sand-300/80 flex items-center justify-between">
+              <span class="text-xs text-clay-600 font-semibold italic">Psychological Reactance</span>
+              <button onclick="openModal(4)" class="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-sand-200 hover:bg-sage-600 hover:text-sand-50 text-espresso-800 transition-colors flex items-center gap-1.5">
+                <span>Read Decode</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Overthinking Spirals -->
+        <article class="episode-card group bg-sand-50 rounded-3xl border border-sand-300 overflow-hidden shadow-warm-sm hover:shadow-warm-lg transition-all flex flex-col justify-between" data-category="overthinking">
+          <div class="relative h-48 overflow-hidden bg-sand-200">
+            <img 
+              src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=700&q=80" 
+              alt="Mind clarity" 
+              onerror="this.src='https://placehold.co/600x400/E2DDD4/3A5A40?text=Mind+Spiral'"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <span class="absolute top-3 left-3 bg-sand-50/90 backdrop-blur-sm text-sage-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Mindset
+            </span>
+            <span class="absolute bottom-3 right-3 bg-espresso-950/80 text-sand-50 text-[11px] font-medium px-2.5 py-0.5 rounded-md flex items-center gap-1">
+              <i class="fa-regular fa-clock"></i> 80s Deep-Dive
+            </span>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-espresso-950 leading-snug group-hover:text-sage-700 transition-colors">
+                ज्यादा सोचना बंद कैसे करें? (Breaking The Spiral)
+              </h3>
+              <p class="text-sm text-espresso-700 mt-2 line-clamp-3 leading-relaxed">
+                Thinking is solving a problem. Overthinking is replaying the problem in 20 different imaginary scenarios where you always lose. Here is the shift.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-sand-300/80 flex items-center justify-between">
+              <span class="text-xs text-clay-600 font-semibold italic">Thought Defusion</span>
+              <button onclick="openModal(5)" class="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-sand-200 hover:bg-sage-600 hover:text-sand-50 text-espresso-800 transition-colors flex items-center gap-1.5">
+                <span>Read Decode</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: YouTube Shorts Hub Card -->
+        <article class="episode-card bg-gradient-to-br from-sage-700 to-sage-900 rounded-3xl text-sand-100 p-8 flex flex-col justify-between border border-sage-800 shadow-warm-md">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-sand-100/10 flex items-center justify-center text-clay-400 text-2xl">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <h3 class="font-serif text-3xl font-bold leading-tight">
+              Watch every single decode in Hindi on YouTube
+            </h3>
+            <p class="text-sand-300 text-sm leading-relaxed">
+              New bite-sized behavioral breakdowns posted every week. Catch the tone, the examples, and join the community discussions in the comments.
+            </p>
+          </div>
+
+          <div class="pt-6">
+            <a href="http://youtube.com/@ashwani-decodes" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center justify-center gap-2 w-full py-3 px-5 rounded-full bg-clay-400 hover:bg-clay-300 text-espresso-950 font-bold text-sm transition-all shadow-sm">
+              <span>Go to @ashwani-decodes</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== INTERACTIVE TOOL: THE DAILY REFRAMER ==================== -->
+    <section id="reframer" class="py-16 md:py-24 bg-sage-900 text-sand-50 relative overflow-hidden">
+      <!-- Ambient light effect -->
+      <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-sage-600/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-clay-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <span class="text-xs uppercase font-bold tracking-widest text-clay-400">Interactive Psychology Widget</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold">The Daily Overthinking Reframer</h2>
+          <p class="text-sand-300 text-sm sm:text-base">
+            Select what your brain is wrestling with right now. Let's decode what is actually happening beneath the noise.
+          </p>
+        </div>
+
+        <!-- Problem Selector Tabs -->
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <button onclick="selectReframing(0)" class="reframer-btn active p-4 rounded-2xl border border-sand-300/20 bg-sand-50/10 text-left hover:bg-sand-50/20 transition-all flex items-center justify-between group" data-index="0">
+            <div>
+              <p class="text-xs text-clay-300 font-semibold uppercase tracking-wider">Scenario A</p>
+              <p class="text-sm font-medium mt-1">"I feel behind in life compared to my peers"</p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-xs opacity-50 group-hover:opacity-100 transition-opacity"></i>
+          </button>
+
+          <button onclick="selectReframing(1)" class="reframer-btn p-4 rounded-2xl border border-sand-300/20 bg-sand-50/5 text-left hover:bg-sand-50/20 transition-all flex items-center justify-between group" data-index="1">
+            <div>
+              <p class="text-xs text-clay-300 font-semibold uppercase tracking-wider">Scenario B</p>
+              <p class="text-sm font-medium mt-1">"Why didn't they reply immediately?"</p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-xs opacity-50 group-hover:opacity-100 transition-opacity"></i>
+          </button>
+
+          <button onclick="selectReframing(2)" class="reframer-btn p-4 rounded-2xl border border-sand-300/20 bg-sand-50/5 text-left hover:bg-sand-50/20 transition-all flex items-center justify-between group" data-index="2">
+            <div>
+              <p class="text-xs text-clay-300 font-semibold uppercase tracking-wider">Scenario C</p>
+              <p class="text-sm font-medium mt-1">"I have so much to do that I'm doing nothing"</p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-xs opacity-50 group-hover:opacity-100 transition-opacity"></i>
+          </button>
+        </div>
+
+        <!-- Dynamic Output Box -->
+        <div id="reframerOutput" class="mt-8 p-6 sm:p-10 rounded-3xl bg-sand-50 text-espresso-950 border border-sand-300 shadow-warm-lg transition-all duration-300">
+          <!-- Populated by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CREATOR SPOTLIGHT & PHILOSOPHY ==================== -->
+    <section id="creator" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Image with organic shape & earthy accents -->
+        <div class="lg:col-span-5 relative">
+          <div class="w-full max-w-md mx-auto relative">
+            <div class="w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-warm-lg border border-sand-300 relative bg-sand-200">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
+                alt="Ashwani Decodes Portrait" 
+                onerror="this.src='https://placehold.co/800x1000/3A5A40/FAF8F5?text=Ashwani+Decodes'"
+                class="w-full h-full object-cover grayscale-[25%] contrast-[105%]"
+              >
+            </div>
+            <!-- Floating quote tag -->
+            <div class="absolute -bottom-6 -right-4 sm:right-6 bg-sand-50 p-4 sm:p-5 rounded-2xl border border-sand-300 shadow-warm-md max-w-xs">
+              <p class="font-serif text-base italic text-espresso-900 leading-snug">
+                "We don't need another lecture on discipline. We need to understand how our brain actually functions."
+              </p>
+              <p class="text-xs font-semibold text-sage-700 mt-2">— Ashwani</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio & Channel Mission -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs uppercase font-bold tracking-widest text-clay-500">Behind The Channel</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso-950 leading-tight">
+            Hi, I'm Ashwani. I decode the human mind so you don't spend life fighting yourself.
+          </h2>
+
+          <div class="space-y-4 text-espresso-700 text-sm sm:text-base leading-relaxed">
+            <p>
+              Across YouTube and Instagram as <strong class="text-espresso-900 font-semibold">@ashwani_decodes</strong>, I analyze the quiet psychological battles that almost everyone experiences yet rarely discusses openly:
+            </p>
+            <ul class="space-y-2 pl-4 border-l-2 border-sage-500 text-espresso-800">
+              <li>• Why ghosting or sudden silence causes genuine physical withdrawal in the brain.</li>
+              <li>• Why scrolling leaves us mentally exhausted instead of relaxed.</li>
+              <li>• Why comparing our messy, real lives to curated 15-second internet clips causes persistent dissatisfaction.</li>
+            </ul>
+            <p>
+              My goal isn't to prescribe rigid rules or preach perfection. It is to equip you with objective psychological frameworks so you can pause, understand your instinct, and act with clarity.
+            </p>
+          </div>
+
+          <!-- Social Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="http://youtube.com/@ashwani-decodes" target="_blank" rel="noopener noreferrer" 
+               class="px-6 py-3 rounded-full bg-sage-700 hover:bg-sage-800 text-sand-50 text-sm font-semibold flex items-center gap-2.5 transition-all shadow-warm-sm">
+              <i class="fa-brands fa-youtube text-red-400"></i>
+              <span>Subscribe on YouTube</span>
+            </a>
+            <a href="https://www.instagram.com/ashwani_decodes/" target="_blank" rel="noopener noreferrer" 
+               class="px-6 py-3 rounded-full border border-sand-400 hover:border-clay-500 bg-sand-100 hover:bg-sand-200 text-espresso-800 text-sm font-semibold flex items-center gap-2.5 transition-all">
+              <i class="fa-brands fa-instagram text-clay-500"></i>
+              <span>Follow on Instagram</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SUNDAY DISPATCH NEWSLETTER ==================== -->
+    <section id="dispatch" class="py-16 bg-sand-200/70 border-t border-sand-300/80">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <div class="w-12 h-12 rounded-full bg-clay-400/30 text-clay-600 flex items-center justify-center mx-auto text-xl">
+          <i class="fa-regular fa-envelope-open"></i>
+        </div>
+        
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-950">
+          The Sunday Decoded Dispatch
+        </h2>
+        
+        <p class="text-espresso-700 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+          One single psychological reframe sent every Sunday morning. No spam, no sales funnels, just 2 minutes of mental calm to start your week.
+        </p>
+
+        <!-- Newsletter Form -->
+        <form id="newsletterForm" class="max-w-md mx-auto flex flex-col sm:flex-row gap-2.5" onsubmit="handleSubscribe(event)">
+          <input 
+            type="email" 
+            id="subscriberEmail"
+            required 
+            placeholder="Enter your email address..." 
+            class="flex-1 px-5 py-3 rounded-full bg-sand-50 border border-sand-400 text-sm text-espresso-900 placeholder:text-espresso-700/60 focus:outline-none focus:ring-2 focus:ring-sage-600 transition-all"
+          >
+          <button 
+            type="submit" 
+            class="px-6 py-3 rounded-full bg-sage-700 hover:bg-sage-800 text-sand-50 font-semibold text-sm transition-all shadow-warm-sm hover:shadow-warm-md whitespace-nowrap">
+            Join 12,000+ Readers
+          </button>
+        </form>
+
+        <p id="subscribeFeedback" class="text-xs text-sage-700 font-medium hidden">
+          ✓ Welcome to the Sunday Dispatch. Look out for our weekly decode in your inbox!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-espresso-950 text-sand-200 border-t border-espresso-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-espresso-800/80">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-sage-600 text-sand-50 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-brain text-sm"></i>
+            </div>
+            <span class="font-serif text-2xl font-bold tracking-tight text-sand-50">Ashwani Decodes</span>
+          </div>
+          <p class="text-sand-400 text-sm max-w-sm leading-relaxed">
+            Where we decode the hidden psychology behind everyday habits, emotional triggers, and human behavior.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="http://youtube.com/@ashwani-decodes" target="_blank" rel="noopener noreferrer" 
+               aria-label="YouTube" class="w-9 h-9 rounded-full bg-espresso-900 hover:bg-sage-700 text-sand-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/ashwani_decodes/" target="_blank" rel="noopener noreferrer" 
+               aria-label="Instagram" class="w-9 h-9 rounded-full bg-espresso-900 hover:bg-clay-500 text-sand-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase font-bold tracking-widest text-clay-400">Navigation</h4>
+          <ul class="space-y-2 text-sm text-sand-400">
+            <li><a href="#topics" class="hover:text-sand-100 transition-colors">Decoded Topics</a></li>
+            <li><a href="#framework" class="hover:text-sand-100 transition-colors">The 3-Step Formula</a></li>
+            <li><a href="#reframer" class="hover:text-sand-100 transition-colors">Daily Reframer Tool</a></li>
+            <li><a href="#creator" class="hover:text-sand-100 transition-colors">About Ashwani</a></li>
+          </ul>
+        </div>
+
+        <!-- External Channels -->
+        <div class="space-y-3">
+          <h4 class="text-xs uppercase font-bold tracking-widest text-clay-400">Official Channels</h4>
+          <ul class="space-y-2 text-sm text-sand-400">
+            <li>
+              <a href="http://youtube.com/@ashwani-decodes" target="_blank" class="hover:text-sand-100 flex items-center gap-2">
+                <span>YouTube Channel</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ashwani_decodes/" target="_blank" class="hover:text-sand-100 flex items-center gap-2">
+                <span>Instagram Profile</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </li>
+            <li class="pt-2 text-xs text-sand-400">
+              Inquiries & collaborations:<br>
+              <span class="text-sand-200">contact@ashwanidecodes.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Note -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-sand-400 gap-4">
+        <p>&copy; <span id="currentYear"></span> Ashwani Decodes. All rights reserved.</p>
+        <p class="italic text-sand-400">"Decode your habits. Understand your mind."</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE DECODE MODAL ==================== -->
+  <div id="decodeModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6">
+    <!-- Backdrop -->
+    <div class="modal-backdrop absolute inset-0 bg-espresso-950/60" onclick="closeModal()"></div>
+    
+    <!-- Modal Window -->
+    <div class="relative bg-sand-50 w-full max-w-2xl rounded-3xl border border-sand-300 shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+      <!-- Modal Header -->
+      <div class="px-6 py-4 bg-sand-100 border-b border-sand-300/80 flex items-center justify-between">
+        <span id="modalCategory" class="text-xs font-bold uppercase tracking-wider text-sage-700 px-2.5 py-1 rounded bg-sand-200">
+          Social Psychology
+        </span>
+        <button onclick="closeModal()" aria-label="Close modal" class="w-8 h-8 rounded-full bg-sand-200 text-espresso-700 hover:bg-sand-300 flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-5 text-espresso-800 text-sm leading-relaxed" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 bg-sand-100 border-t border-sand-300/80 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <span class="text-xs text-espresso-700 italic">Want the full Hindi video breakdown?</span>
+        <a id="modalYoutubeLink" href="http://youtube.com/@ashwani-decodes" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-sage-700 hover:bg-sage-800 text-sand-50 text-xs font-semibold">
+          <i class="fa-brands fa-youtube text-red-400"></i>
+          <span>Watch on YouTube</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    // 1. Dynamic Current Year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // 2. Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileDrawer.classList.toggle('hidden');
+    });
+
+    // Close mobile drawer when clicking nav links
+    document.querySelectorAll('#mobileDrawer a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileDrawer.classList.add('hidden');
+      });
+    });
+
+    // 3. Filter Decoded Topics
+    function filterEpisodes(category) {
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(tab => {
+        if (tab.dataset.filter === category) {
+          tab.classList.add('bg-sage-700', 'text-sand-50', 'border-sage-700');
+          tab.classList.remove('bg-sand-100', 'text-espresso-700', 'border-sand-400');
+        } else {
+          tab.classList.remove('bg-sage-700', 'text-sand-50', 'border-sage-700');
+          tab.classList.add('bg-sand-100', 'text-espresso-700', 'border-sand-400');
+        }
+      });
+
+      const cards = document.querySelectorAll('.episode-card');
+      cards.forEach(card => {
+        const cardCat = card.dataset.category;
+        if (!cardCat) return; // Keep persistent promo card visible or handled
+        if (category === 'all' || cardCat === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 4. Decode Details Data for Modal
+    const decodesData = {
+      1: {
+        category: "Social Comparison Theory",
+        title: "Why Do We Compare Our Life With Others?",
+        subtitle: "The cognitive illusion of social media highlights versus internal reality.",
+        theory: "Leon Festinger (1954) established Social Comparison Theory: humans determine their own social and personal worth based on how they stack up against others.",
+        theProblem: "When you open Instagram or LinkedIn, your brain processes other people's curated triumphs (a new car, a promotion, an exotic trip) as their *normal everyday life*. Meanwhile, you compare their best 1% against your messy 100%.",
+        theReframe: "Comparison is simply an old survival mechanism that once checked if you were lagging behind the tribe. When you catch yourself envying someone, remind yourself: 'I am comparing my unedited footage to their edited movie trailer.'",
+        actionableTakeaway: "Next time comparison strikes, practice 'Sympathetic Joy' or Mudita: acknowledge their win, then write down one personal micro-victory from this week."
+      },
+      2: {
+        category: "Dopamine & Behavioral Triggers",
+        title: "Why Do We Check Our Phone Without Any Notifications?",
+        subtitle: "Variable Reward Schedules & Phantom Reflexes.",
+        theory: "B.F. Skinner's Operant Conditioning (Variable Ratio Schedule). This is the exact mechanism that powers casino slot machines.",
+        theProblem: "When rewards are unpredictable (sometimes there is a DM, sometimes a like, sometimes nothing), the brain releases more dopamine during the *anticipation* than during the reward itself. Your hand reaches for the phone not because you have a message, but because you are trying to escape 5 seconds of discomfort.",
+        theReframe: "Boredom is not an emergency. The urge to check your phone is merely a symptom of your brain resisting still moments.",
+        actionableTakeaway: "Apply the '10-Breath Rule': Whenever you feel the involuntary urge to unlock your phone, take 10 slow conscious breaths before touching the screen."
+      },
+      3: {
+        category: "Cognitive Quieting & Sleep",
+        title: "Why Do We Overthink Specifically at Night?",
+        subtitle: "The Default Mode Network (DMN) & Absence of Daytime Distractions.",
+        theory: "During daylight hours, the brain is actively engaged with external tasks (Task-Positive Network). When you lie in bed in the dark, the Task-Positive Network shuts off and the Default Mode Network takes over.",
+        theProblem: "The brain reviews unresolved memories, social interactions, and prospective worries. Since the room is dark and silent, small worries echo with 10x volume because there are zero external inputs to dilute them.",
+        theReframe: "Thoughts at 1:00 AM are chemically distorted. Your prefrontal cortex (rational thought) is fatigued, while your amygdala (threat detector) is hyperactive.",
+        actionableTakeaway: "Keep a pen and small pad beside your bed. Do a 2-minute 'Brain Dump' onto paper. Tell yourself: 'These thoughts are safely stored. I will solve them tomorrow at 10 AM, not now.'"
+      },
+      4: {
+        category: "Attachment & Attraction",
+        title: "Why Does Ignoring Someone Make Them Want You More?",
+        subtitle: "Psychological Reactance & Scarcity Principle.",
+        theory: "Jack Brehm's Psychological Reactance (1966) & Robert Cialdini's Scarcity Principle.",
+        theProblem: "When someone suddenly withdraws attention, our brain senses a loss of control and freedom. The ego cannot tolerate sudden ambiguity, so it obsessively analyzes the missing person to regain certainty and reassurance.",
+        theReframe: "You don't miss the person more; you are craving dopamine and an answer to the puzzle. Don't confuse an attachment trigger with genuine compatibility.",
+        actionableTakeaway: "Recognize that someone withdrawing attention is simply information about their availability. Chase consistency, not scarcity."
+      },
+      5: {
+        category: "Thought Defusion & Rumination",
+        title: "ज्यादा सोचना बंद कैसे करें? (How to Stop Overthinking)",
+        subtitle: "Differentiating between Productive Thinking and Endless Rumination.",
+        theory: "Acceptance and Commitment Therapy (ACT) - Cognitive Defusion.",
+        theProblem: "Problem-solving moves toward a decision and action. Overthinking moves in a circle without ever leaving the chair. It creates the false illusion that worrying is equivalent to being responsible.",
+        theReframe: "You are not your thoughts. You are the observer who listens to your thoughts. Thoughts are just clouds passing through the sky of your consciousness.",
+        actionableTakeaway: "Ask the 24-Hour Question: 'Is there an action I can take in the next 5 minutes regarding this problem?' If yes, take it. If not, state out loud: 'I notice my brain is trying to solve something that cannot be solved right now.'"
+      }
+    };
+
+    function openModal(id) {
+      const data = decodesData[id];
+      if (!data) return;
+
+      document.getElementById('modalCategory').textContent = data.category;
+      
+      const content = `
+        <div>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-espresso-950 mb-1">${data.title}</h2>
+          <p class="text-xs sm:text-sm text-clay-600 font-semibold italic">${data.subtitle}</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-sand-200/70 border border-sand-300">
+          <p class="text-xs uppercase tracking-wider font-bold text-sage-800 mb-1">Scientific Core</p>
+          <p class="text-xs sm:text-sm text-espresso-800">${data.theory}</p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="font-bold text-sm text-espresso-900 uppercase tracking-wider text-sage-700">What is happening in the brain:</h4>
+          <p class="text-sm leading-relaxed">${data.theProblem}</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-sage-100 border border-sage-200 space-y-1">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-sage-800">The Ashwani Decodes Reframe</h4>
+          <p class="text-sm italic font-serif text-sage-900">"${data.theReframe}"</p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-clay-600">60-Second Grounding Step:</h4>
+          <p class="text-sm bg-sand-100 p-3 rounded-xl border border-sand-300/80">${data.actionableTakeaway}</p>
+        </div>
+      `;
+
+      document.getElementById('modalBody').innerHTML = content;
+      document.getElementById('decodeModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('decodeModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // 5. Daily Reframer Interactive Tool Data
+    const reframerScenarios = [
+      {
+        question: "I feel behind in life compared to my friends & peers.",
+        psychology: "This is Upward Social Comparison Bias. Your brain automatically takes other people's highlights and projects them across all areas of their life while focusing exclusively on your lowest moments.",
+        scriptToNotice: "Notice the internal voice saying: 'Everyone has figured out their career/relationships except me.'",
+        reframe: "You are comparing your behind-the-scenes with everyone else's movie trailer. Success is non-linear. If you are better than who you were 6 months ago, you are winning your own race.",
+        quickAction: "Write down 3 things that you once wished for that you currently have today."
+      },
+      {
+        question: "Why didn't they reply immediately? Did I say something wrong?",
+        psychology: "Catastrophizing & Anxious Attachment Triggers. The brain hates cognitive ambiguity. When an answer is missing, the brain assumes the worst possible scenario to protect your ego against sudden rejection.",
+        scriptToNotice: "Notice the urge to send double texts, reread past conversations, or seek reassurance.",
+        reframe: "People's response times are 95% about their own immediate reality (busy at work, overwhelmed, phone muted) and only 5% about you. Do not let an unanswered message hold your self-worth hostage.",
+        quickAction: "Put your phone facedown in another room for 30 minutes. Drink a glass of water and complete one uninterrupted task."
+      },
+      {
+        question: "I have so much work to do that I'm paralyzed doing nothing.",
+        psychology: "Analysis Paralysis & Dopamine Procrastination. When the prefrontal cortex perceives a task list as an overwhelming threat, it triggers a freeze response. Procrastination is not laziness; it is emotional regulation.",
+        scriptToNotice: "Notice yourself switching tabs or opening social media to escape the anxiety of starting.",
+        reframe: "Lower the bar until it feels ridiculous. You don't need to finish the whole project today; you just need to work for 5 minutes.",
+        quickAction: "The 2-Minute Rule: Pick the smallest micro-action (e.g. open the doc, type one sentence) and commit to doing just that for 120 seconds."
+      }
+    ];
+
+    function selectReframing(index) {
+      const buttons = document.querySelectorAll('.reframer-btn');
+      buttons.forEach((btn, i) => {
+        if (i === index) {
+          btn.classList.add('active', 'bg-sand-50/20', 'border-sand-300/60');
+          btn.classList.remove('bg-sand-50/5', 'border-sand-300/20');
+        } else {
+          btn.classList.remove('active', 'bg-sand-50/20', 'border-sand-300/60');
+          btn.classList.add('bg-sand-50/5', 'border-sand-300/20');
+        }
+      });
+
+      const item = reframerScenarios[index];
+      const output = document.getElementById('reframerOutput');
+      
+      output.innerHTML = `
+        <div class="space-y-6">
+          <div class="flex items-start justify-between gap-4 border-b border-sand-300 pb-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-sage-700">Decoded Problem</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-espresso-950 mt-1">"${item.question}"</h3>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-sage-100 text-sage-800 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-3">
+              <h4 class="text-xs uppercase font-bold tracking-wider text-clay-600">The Subconscious Bias</h4>
+              <p class="text-sm text-espresso-800 leading-relaxed">${item.psychology}</p>
+              <div class="p-3 bg-sand-200/60 rounded-xl text-xs text-espresso-700 italic border border-sand-300/50">
+                ${item.scriptToNotice}
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <h4 class="text-xs uppercase font-bold tracking-wider text-sage-700">The Ashwani Reframe</h4>
+              <p class="text-sm font-serif italic text-espresso-900 bg-sage-50 p-4 rounded-2xl border border-sage-200/80 leading-snug">
+                "${item.reframe}"
+              </p>
+              <div class="pt-1">
+                <span class="text-xs font-bold text-clay-600 uppercase tracking-wider block mb-1">Your 60-Second Action:</span>
+                <p class="text-xs text-espresso-800 font-medium">${item.quickAction}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Initialize initial reframing tab
+    selectReframing(0);
+
+    // 6. Newsletter Subscription Handler
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const email = document.getElementById('subscriberEmail').value;
+      if (email) {
+        document.getElementById('subscribeFeedback').classList.remove('hidden');
+        document.getElementById('subscriberEmail').value = '';
+        setTimeout(() => {
+          document.getElementById('subscribeFeedback').classList.add('hidden');
+        }, 6000);
+      }
+    }
+  </script>
+</body>
+</html>
